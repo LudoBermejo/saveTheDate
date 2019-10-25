@@ -1,8 +1,8 @@
 {
-  "name": "phaser-project-template",
-  "version": "3.19.0",
-  "description": "Phaser 3 starter template with TypeScript and webpack.",
-  "homepage": "https://github.com/yandeu/phaser-project-template#readme",
+  "name": "save-the-date",
+  "version": "1.0",
+  "description": "Example of PhaserJS.",
+  "homepage": "https://github.com/LudoBermejo/saveTheDate#readme",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack/webpack.dev.js",
@@ -15,20 +15,19 @@
     "html5 game",
     "TypeScript",
     "webpack",
-    "starter"
   ],
   "author": {
-    "name": "Yannick Deubel",
-    "url": "https://github.com/yandeu"
+    "name": "Ludo Bermejo",
+    "url": "https://github.com/LudoBermejo"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yandeu/phaser-project-template.git"
+    "url": "https://github.com/LudoBermejo/saveTheDate.git"
   },
   "template": {
-    "name": "phaser-project-template",
-    "url": "https://github.com/yandeu/phaser-project-template",
-    "author": "Yannick Deubel (https://github.com/yandeu)"
+    "name": "save-the-date",
+    "url": "https://github.com/LudoBermejo/saveTHeDate",
+    "author": "Yannick Deubel (https://github.com/LudoBermejo)"
   },
   "engines": {
     "node": ">=8.0.0"

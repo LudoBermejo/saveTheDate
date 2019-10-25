@@ -7,16 +7,27 @@ export default class FirstScene extends Phaser.Scene {
   }
 
   create() {
-    const date = new Text(this, this.cameras.main.width / 2, this.cameras.main.height/2 -100, 'On November the 4th');
-    const saveTheDate = new Text(this, this.cameras.main.width / 2, this.cameras.main.height/2, 'Save the date!!', '120px');
+    const date = new Text(
+      this,
+      this.cameras.main.width / 2,
+      this.cameras.main.height / 2 - 100,
+      'On November the 4th'
+    )
+    const saveTheDate = new Text(
+      this,
+      this.cameras.main.width / 2,
+      this.cameras.main.height / 2,
+      'Save the date!!',
+      '120px'
+    )
     date.on('COMPLETED', () => {
-      saveTheDate.start();
+      saveTheDate.start()
     })
     saveTheDate.on('COMPLETED', () => {
       setTimeout(() => {
         this.scene.start('SecondScene')
-      }, 2000);
+      }, 2000)
     })
-    date.start();
+    date.start()
   }
 }

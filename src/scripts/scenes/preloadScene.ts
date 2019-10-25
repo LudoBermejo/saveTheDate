@@ -4,19 +4,34 @@ export default class PreloadScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.audio('stamp', 'assets/sounds/stamp.mp3');
-    this.load.atlas('flares', 'assets/img/flares.png', 'assets/data/flares.json');
-    this.load.image('phaser-logo', 'assets/img/TD_Logo_2019_rgb_td-logo-2019-rgb-black.png')
-    this.load.image('particle', 'assets/img/rain.png');
-    this.load.spritesheet('ludoSprite', 'assets/sprites/LudoSprite.png', { frameWidth: 32, frameHeight: 48 });
-    this.load.spritesheet('maraSprite', 'assets/sprites/MaraSprite.png', { frameWidth: 32, frameHeight: 48 });
-    this.load.scenePlugin('DialogModalPlugin', 'assets/plugins/dialog_plugin.js');
-
+    this.load.audio('stamp', 'assets/sounds/stamp.mp3')
+    this.load.atlas(
+      'flares',
+      'assets/img/flares.png',
+      'assets/data/flares.json'
+    )
+    this.load.image(
+      'phaser-logo',
+      'assets/img/TD_Logo_2019_rgb_td-logo-2019-rgb-black.png'
+    )
+    this.load.image('particle', 'assets/img/rain.png')
+    this.load.spritesheet('ludoSprite', 'assets/sprites/LudoSprite.png', {
+      frameWidth: 32,
+      frameHeight: 48
+    })
+    this.load.spritesheet('maraSprite', 'assets/sprites/MaraSprite.png', {
+      frameWidth: 32,
+      frameHeight: 48
+    })
+    this.load.scenePlugin(
+      'DialogModalPlugin',
+      'assets/plugins/dialog_plugin.js'
+    )
   }
 
   create() {
     this.scene.start('FirstScene')
-    
+
     /**
      * This is how you would dynamically import the mainScene class (with code splitting),
      * add the mainScene to the Scene Manager

@@ -7,7 +7,7 @@ export default class Firework {
     this.particleEmitterLong = this.particleManager.createEmitter({
       accelerationX: 10,
       accelerationY: 10,
-      frame: [ 'red', 'blue', 'green', 'yellow' ],
+      frame: ['red', 'blue', 'green', 'yellow'],
       x,
       y,
       speed: [200, 175, 150, 125, 100],
@@ -17,14 +17,18 @@ export default class Firework {
       blendMode: 'SCREEN',
       scale: 0.2,
       maxParticles: 80,
-      alpha: { start: 1, end: 0 },
-    });
+      alpha: { start: 1, end: 0 }
+    })
 
-    scene.time.delayedCall(3000, () => {
-      this.particleManager.destroy();
-    }, [], this);
+    scene.time.delayedCall(
+      3000,
+      () => {
+        this.particleManager.destroy()
+      },
+      [],
+      this
+    )
 
     this.particleEmitterLong.explode(100, x, y)
-
   }
 }
