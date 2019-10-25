@@ -5,6 +5,14 @@
 <h4 align="center">
 A little example of <a href="https://phaser.io/" target="_blank" >Phaser 3</a> with <a href="https://www.typescriptlang.org/index.html" target="_blank" >TypeScript</a> and <a href="https://webpack.js.org/" target="_blank" >webpack</a></h4>
 
+## TODO:
+
+- Code is awful. That happens when you work at nigh
+- Maybe create an engine to extract all code to a JSON is worthy
+- Not sure if lint is passed
+- Some problems with dialogs (destroy method is acting weird)
+- Pretty interesting, this new stuff on Phaser 3 regarding particles. Seems powerful.
+
 <p align="center">
   <a href="https://david-dm.org/yandeu/phaser-project-template" title="dependencies status">
     <img src="https://david-dm.org/yandeu/phaser-project-template/status.svg?style=flat-square"/>
